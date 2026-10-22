@@ -15,7 +15,6 @@ public static class InputValidator
         => Regex.IsMatch(input, @"^[1-9][0-9]{4}$");
 
     // R4: ID-, danach mindestens ein Buchstabe oder eine Ziffer, Endung .txt
-    // TODO: Implementieren
     public static bool IsValidFilename(string input)
-        => false;
+        => Regex.IsMatch(input, @"^ID-[A-Za-z0-9]+\.txt$");
 }
