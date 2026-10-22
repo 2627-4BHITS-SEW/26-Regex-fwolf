@@ -4,7 +4,7 @@ public static class InputValidator
 {
     // R1: B oder C, gefolgt von genau drei Ziffern (z. B. B203)
     public static bool IsValidRoom(string input)
-        => Regex.IsMatch(input, @"[BC][0-9]{3}");
+        => Regex.IsMatch(input, @"^[BC][0-9]{3}$");
 
     // R2: 4 bis 12 Zeichen: Buchstaben (A-Z, a-z), Ziffern oder _
     public static bool IsValidUsername(string input)
