@@ -8,7 +8,7 @@ public static class InputValidator
 
     // R2: 4 bis 12 Zeichen: Buchstaben (A-Z, a-z), Ziffern oder _
     public static bool IsValidUsername(string input)
-        => Regex.IsMatch(input, @"^[A-Za-z0-9_]{3,12}$");
+        => Regex.IsMatch(input, @"^[A-Za-z0-9_]{4,12}$");
 
     // R3: Genau fünf Ziffern, die erste darf nicht 0 sein
     public static bool IsValidStudentId(string input)
