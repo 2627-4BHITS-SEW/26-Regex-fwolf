@@ -12,7 +12,7 @@ public static class InputValidator
 
     // R3: Genau fünf Ziffern, die erste darf nicht 0 sein
     public static bool IsValidStudentId(string input)
-        => Regex.IsMatch(input, @"^[0-9]{5}$");
+        => Regex.IsMatch(input, @"^[1-9][0-9]{4}$");
 
     // R4: ID-, danach mindestens ein Buchstabe oder eine Ziffer, Endung .txt
     // TODO: Implementieren
